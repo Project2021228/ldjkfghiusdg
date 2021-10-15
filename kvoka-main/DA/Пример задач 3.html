@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+      <meta charset="utf-8">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+
+
+    </head> 
+
+    <body>
+     <style>
+body {
+  background: url(./фон.jpg) no-repeat center center fixed;
+  background-size: cover;  
+}
+nav {
+   background: black ;
+}
+li.waves-effect.active {
+   background: black;
+}
+table {
+   border-collapse: collapse;
+   
+}
+th, td {
+   border: 2px solid black;
+   color: black;
+
+}
+div.box{
+  text-align: center;
+  font-size:14px;
+  background-color: white;
+  margin-right:10px;
+  padding-bottom: 10px;
+}
+p {
+    color: black; /* Цвет текста */
+}
+ul.collapsible.poput {
+  width: 1000px ;
+}
+ul.tabs {
+  height: 64px ;
+  background: white ;
+
+}
+
+.block-content {
+  margin-bottom: 70px;
+}
+
+@media all and (min-width: 993px) {
+  .container {
+      width: 85%;
+  }
+}
+
+.modal-content{
+  color: black;
+}
+         }
+      </style>
+      <nav>
+        <div class="nav-wrapper">
+          <div class="container">
+          <a href="главная.html" class="brand-logo"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-light btn modal-trigger blue-grey darken-3" href="#modal1">Дополнительные материалы</a>
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>Дополнительные материалы</h4>
+                <p><h5>Здесь будут представление материалы для решения задач, связанных с системами счисления</h5></p>
+                <p><h5><b>Таблица перевода систем счисления.</b></h5></p>
+                <table>
+                 <tr><th>Десятичная</th><th>Двоичная</th><th>Восмеричная</th><th>Шестнадцатиричная</th></tr>
+                 <tr><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                 <tr><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                 <tr><td>2</td><td>10</td><td>2</td><td>2</td></tr>
+                 <tr><td>3</td><td>11</td><td>3</td><td>3</td></tr>
+                 <tr><td>4</td><td>100</td><td>4</td><td>4</td></tr>
+                 <tr><td>5</td><td>101</td><td>5</td><td>5</td></tr>
+                 <tr><td>6</td><td>110</td><td>6</td><td>6</td></tr>
+                 <tr><td>7</td><td>111</td><td>7</td><td>7</td></tr>
+                 <tr><td>8</td><td>1000</td><td>10</td><td>8</td></tr>
+                 <tr><td>9</td><td>1001</td><td>11</td><td>9</td></tr>
+                 <tr><td>10</td><td>1010</td><td>12</td><td>A</td></tr>
+                 <tr><td>11</td><td>1011</td><td>13</td><td>B</td></tr>
+                 <tr><td>12</td><td>1100</td><td>14</td><td>C</td></tr>
+                 <tr><td>13</td><td>1101</td><td>15</td><td>D</td></tr>
+                 <tr><td>14</td><td>1110</td><td>16</td><td>E</td></tr>
+                 <tr><td>15</td><td>1111</td><td>17</td><td>F</td></tr>
+                </table>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </nav>
+  
+    
+  <div class="container">
+    <div class="box"> 
+    <br><i align="centre"><h3><b>Поиск основания систем счисления.</b></h3>
+    <p class="container">
+      <h5><span>1. Укажите через запятую в порядке возрастания все основания систем счисления, в которых запись числа 22 оканчивается на 4.</h5></span>
+    </p>
+  <ul class="collapsible expandable" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+          <div class="collapsible-body"><span><h6>Для начала нужно найти все целые числа N > 4 (т.к. последней цифрой числа должна быть 4) такие, что статок от деления 22 на N равен 4
+      <br>Следовательно получаем уравнение: 22=k*N+4, где k - целое неотрицательное числи(0, 1, 2, ...);
+      <br>Из формулы получаем, что k*N=18 ,так что задача сводится к тому, чтобы найти все делители числа 18, которые больше 4;
+      <br>В этой задаче есть только три таких делителя: 6, 9, 18.
+      <br>
+      <br>Ответ: 6, 9, 18.</b></h6></span></div>
+      </li>
+  </ul>
+  <br>
+  <br>
+  <p class="container">
+      <h5><span>2. В системе счисления с некоторым основанием десятичное число 129 записывается как 1004. Укажите это основание.</span></h5>
+    </p>
+    <ul class="collapsible expandable" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+          <div class="collapsible-body"><span><h6>Для начала нужно найти все целые числа N > 4 (т.к. последней цифрой числа 1004 является 4) такие, что статок от деления 129 на N равен 4;
+          <br>Обозначим за х нужную систему счисления, тогда будет выполняться тождество(перевод из системы счисления с основанием х в десятичную):
+          <br>x<sup>3</sup>+4*x<sup>0</sup>=129
+          <br>x<sup>3</sup>+4*1=129
+          <br>x<sup>3</sup>=125
+          <br><span>∛125</span> = 5
+          <br>Следовательно x = 5
+          <br>
+          <br>Ответ: 5.</b></h6></span></div>
+          </li>
+      </ul>
+  <br>
+  <br>
+
+  <p class="container">
+      <h5><span>3. Укажите наименьшее основание системы счисления, в которой запись числа 70 трехзначна.</span></h5>
+    </p>
+  <ul class="collapsible expandable" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+          <div class="collapsible-body"><span><h6>Обозначим через N неизвестное основание системы счисления, тогда запись числа 70 в этой системе имеет вид:
+      <p align="center">x * y * z <sub>N</sub> = 70,</p>
+      Вспомним алгоритм перевода числа из системы счисления с основанием N в десятичную систему: расставляем сверху номера разрядов и умножаем каждую цифру на основание в степени, равной разряду:
+      <br>xyz<sub>N</sub> = x * N<sup>2</sup> + y * N + z = 70;
+      <br>Поскольку запись трехзначная, x &ne; 0, поэтому 70 &ge; N<sup>2</sup>;
+      <br>С другой стороны, четвертой цифры нет, то есть, в третьем разряде – ноль, поэтому 70 < N<sup>3</sup>;
+      <br>Объединяя последние два условия, получаем, что искомое основание N удовлетворяет двойному неравенству:
+      <p align="center">N<sup>2</sup> &le; 70 < N<sup>3</sup></p>
+      Учитывая, что N – целое число, методом подбора находим целые решения этого неравенства; их несколько – 5, 6, 7, 8:
+      <p align="center">5<sup>2</sup> = 25 &le; 70 < 5<sup>3</sup> = 125</p>
+      <p align="center">6<sup>2</sup> = 36 &le; 70 < 6<sup>3</sup> = 216</p>
+      <p align="center">7<sup>2</sup> = 49 &le; 70 < 7<sup>3</sup> = 343</p>
+      <p align="center">8<sup>2</sup> = 64 &le; 70 < 8<sup>3</sup> = 512</p>
+      Минимальное из этих значений – 5.
+      <br>
+      <br> Ответ: 5.</h6></span></div>
+      </li>
+  </ul>
+  <br>
+  <br>
+
+  <p class="container">
+      <h5><span>4. Запись числа 65<sub>8</sub> в некоторой системе счисления выглядит так: 311<sub>N</sub>. Найдите основание системы счисления N.</span></h5>
+    </p>
+      <ul class="collapsible expandable" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+            <div class="collapsible-body"><span><h6>Поскольку 65 < 311 соответственно 8 > N.
+              <br>Глядя на разницу между 65 и 311, можно предположить, что N как минимум в 2 раза меньше 8.
+              <br>Предположим что N=4. Проверяем:
+              <p align="center">
+              311<sub>4</sub> = 53<sub>10</sub> = 65<sub>8</sub>.
+              </p>
+              Таким образом ответ - 4.
+              <br>
+              <br>Ответ: 4.</h6></span></div>
+          </li>
+      </ul>
+  <br>
+  <br>
+  <p class="container"> 
+    <h5><span>5. Запись числа 344 в некоторой системе счисления выглядит так: 1A8<sub>N</sub>. Найдите основание системы счисления N.</span></h5>
+  </p>
+  <ul class="collapsible expandable" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+          <div class="collapsible-body"><span><h6>Для начала нужно найти все целые числа N > 8 (т.к. последней цифрой числа 1A8 является 8) такие, что статок от деления 344 на N равен 8; 
+          <br>Обозначим за х нужную систему счисления, тогда будет выполняться тождество(перевод из системы счисления с основанием х в десятичную):
+          <br>1*x<sup>2</sup>+A*x<sup>1</sup>+8*x<sup>0</sup>=344.
+          <br>A<sub>16</sub>=10(Смотри дополнительные материалы).
+          <br>x<sup>2</sup>+10x+8=344.
+          <br>x<sup>2</sup>+10x-336=0.
+          <br>С помощью Теоремы Пифагора получаем дискриминант равный 1444, который равен 38<sup>2</sup>.
+          <br>Первый х равен 14, второй -24.
+          <br>Осинование системы счисления не может быть отрицательным,
+          <br>Таким образом ответ - 14.
+          <br>
+          <br>Ответ: 14.</h6></span></div>
+      </li>
+    </ul>
+    <br>
+    <br>
+    <p class="container"> 
+      <h5><span>6. Запись числа 180 в системе счисления с основанием N содержит 3 цифры и оканчивается на 0. Перечислите в порядке возрастания все возможные основания системы счисления.</span></h5>
+    </p>
+    <ul class="collapsible expandable" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+            <div class="collapsible-body"><span><h6>Поскольку запись в системе счисления с основанием N заканчивается на 0, то остаток от деления числа 180 на N равен 0, то есть при некотором целом x имеем N умножить на x = 180.
+            <br>Cледовательно, основание N – это делитель числа 180.
+            <br>C другой стороны, запись числа содержит 3 цифры, то есть 1000<sub>n</sub> > 180 &ge; 100<sub>n</sub>, N<sup>3</sup> > 180 &ge; N<sup>2</sup>.
+            <br>Начнем выписывать кубы и квадраты делителей, пока квадрат делителя не будет превышать 180:
+            <br>2<sup>2</sup>=4; 3<sup>2</sup>=9; 4<sup>2</sup>=16; 5<sup>2</sup>=25; 6<sup>2</sup>=36; 9<sup>2</sup>=81; 10<sup>2</sup>=100; 12<sup>2</sup>=144;
+            <br>2<sup>3</sup>=8; 3<sup>3</sup>=27; 4<sup>3</sup>=64; 5<sup>3</sup>=125; 6<sup>3</sup>=216; 9<sup>3</sup>=729; 10<sup>3</sup>=1000; 12<sup>3</sup>=1728;
+            <br>Видим, что из этого списка все условия выполняются для чисел  N = 6, 9, 10, 12.
+            <br>
+            <br>Ответ:N = 6, 9, 10, 12. </h6></span></div>
+        </li>
+      </ul>
+  </div>
+</div>
+
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+        $('.modal').modal();
+        $('ul.tabs').tabs();
+        $('.collapsible').collapsible();
+      });
+      </script>
+    </body>
+  </html>

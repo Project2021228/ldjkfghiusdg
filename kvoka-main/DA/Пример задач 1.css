@@ -1,0 +1,56 @@
+body {
+	background: url(./фон.jpg) no-repeat center center fixed;
+	background-size: cover;  
+}
+nav {
+   background: black ;
+}
+li.waves-effect.active {
+   background: black;
+}
+table {
+   border-collapse: collapse;
+   
+}
+th, td {
+   border: 2px solid black;
+   color: black;
+
+}
+div.box{
+	text-align: center;
+	font-size:14px;
+	background-color: white;
+	margin-right:10px;
+	padding-bottom: 10px;
+}
+p {
+    color: black; /* Цвет текста */
+}
+ul.collapsible.poput {
+	width: 1000px ;
+}
+ul.tabs {
+	height: 64px ;
+	background: white ;
+
+}
+
+.block-content {
+	margin-bottom: 70px;
+}
+
+@media all and (min-width: 993px) {
+	.container {
+	    width: 85%;
+	}
+}
+
+.modal-content{
+	color: black;
+}
+.modal {
+	width: 80%;
+	max-height: 80%;
+}
+

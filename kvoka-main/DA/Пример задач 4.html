@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+      <meta charset="utf-8">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+      <link rel="stylesheet" type="text/css" href="Пример задач 1.css">
+
+    </head> 
+
+    <body>
+
+
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">three</a></li>
+      </ul>
+      <nav>
+        <div class="nav-wrapper">
+          <div class="container">
+          <a href="главная.html" class="brand-logo"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-light btn modal-trigger blue-grey darken-3" href="#modal1">Дополнительные материалы</a>
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>Дополнительные материалы</h4>
+                <p><h5>Здесь будут представление материалы для решения задач, связанных с системами счисления</h5></p>
+                <p><h5><b>Таблица перевода систем счисления.</b></h5></p>
+                <table>
+                 <tr><th>Десятичная</th><th>Двоичная</th><th>Восмеричная</th><th>Шестнадцатиричная</th></tr>
+                 <tr><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                 <tr><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                 <tr><td>2</td><td>10</td><td>2</td><td>2</td></tr>
+                 <tr><td>3</td><td>11</td><td>3</td><td>3</td></tr>
+                 <tr><td>4</td><td>100</td><td>4</td><td>4</td></tr>
+                 <tr><td>5</td><td>101</td><td>5</td><td>5</td></tr>
+                 <tr><td>6</td><td>110</td><td>6</td><td>6</td></tr>
+                 <tr><td>7</td><td>111</td><td>7</td><td>7</td></tr>
+                 <tr><td>8</td><td>1000</td><td>10</td><td>8</td></tr>
+                 <tr><td>9</td><td>1001</td><td>11</td><td>9</td></tr>
+                 <tr><td>10</td><td>1010</td><td>12</td><td>A</td></tr>
+                 <tr><td>11</td><td>1011</td><td>13</td><td>B</td></tr>
+                 <tr><td>12</td><td>1100</td><td>14</td><td>C</td></tr>
+                 <tr><td>13</td><td>1101</td><td>15</td><td>D</td></tr>
+                 <tr><td>14</td><td>1110</td><td>16</td><td>E</td></tr>
+                 <tr><td>15</td><td>1111</td><td>17</td><td>F</td></tr>
+                </table>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </nav>
+  
+    
+  <div class="container">
+    <div class="box"> 
+    <br><i align="centre"><h3><b>Перевод из 2-й системы счисления в другие системы счисления.</b></h3>
+    <p class="container">
+      <h5><span>1. Переводите 1101100<sub>2</sub> в десятичную систему </h5></span>
+    </p>
+  <ul class="collapsible expandable" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+          <div class="collapsible-body"><span><h6>
+            Для перевода числа 11000101 в десятичную систему воспользуемся формулой:
+
+            <br>A<sub>n</sub> = a<sup>n-1</sup> ∙ q<sup>n-1</sup> + a<sup>n-2</sup> ∙ q<sup>n-2</sup> + ∙∙∙ + a<sup>0</sup> ∙ q<sup>0</sup>
+
+            <br>Отсюда:
+
+            <br>1101100<sub>2</sub> = 1·2<sup>6</sup>+1·2<sup>5</sup>+0·2<sup>4</sup>+1·2<sup>3</sup>+1·2<sup>2</sup>+0·2<sup>1</sup>+0·1 = 108<sub>10</sub>
+
+            <br> Ответ: 108.
+ </b></h6></span></div>
+      </li>
+  </ul>
+  <br>
+  <br>
+  <p class="container">
+      <h5><span>2. Переведите число 1101100<sub>2</sub> в 8-ую систему счисления.</span></h5>
+    </p>
+    <ul class="collapsible expandable" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+          <div class="collapsible-body"><span><h6>
+            Сначала нужно перевести 1101100<sub>2</sub> в 10-ую систему счисления. Дальше последовательным делением полученное число переводим в 8-ую систему счисления.
+
+            <br>Переводим 11011002 в десятичную систему:
+            <br>11011002 = 1·26+1·25+0·24+1·23+1·22+0·21+0·1 = 10810    
+
+
+            <br>Переведем 108<sub>10</sub> в 8-ую систему:
+
+            
+            <br>108/8 = 13, остаток: 4
+            <br>13/8 = 1, остаток: 5
+            <br>1/8 = 0, остаток: 1
+            <br>108<sub>10</sub> = 154<sub>8</sub>
+            <br>Ответ: 154.
+          </h6></span></div>
+          </li>
+      </ul>
+  <br>
+  <br>
+
+  <p class="container">
+      <h5><span>3. Переведите число 1111100<sub>2</sub> в 16-ую систему счисления.</span></h5>
+    </p>
+  <ul class="collapsible expandable" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+          <div class="collapsible-body"><span><h6>
+            
+            Сначала нужно перевести 1111100<sub>2</sub> в 10-ую систему счисления. Дальше последовательным делением полученное число переводим в 16-ую систему счисления.
+
+            <br> Переводим 1111100<sub>2</sub> в десятичную систему:
+            <br>1111100<sub>2</sub> = 1·2<sup>6</sup>+1·2<sup>5</sup>+1·2<sup>4</sup>+1·2<sup>3</sup>+1·2<sup>2</sup>+0·2<sup>1</sup>+0·1 = 124<sub>10</sub>
+
+            <br>Переводим целую часть 124<sub>10</sub> в 16-ую систему последовательным делением на 16:
+            <br>124/16 = 7, остаток: 12, 12 = C
+            <br>7/16 = 0, остаток: 7
+            <br>124<sub>10</sub> = 7C<sub>16</sub>
+            <br> Ответ: 7С.
+          </h6></span></div>
+      </li>
+  </ul>
+  <br>
+  <br>
+
+  <p class="container">
+      <h5><span>4. </span></h5>
+    </p>
+      <ul class="collapsible expandable" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+            <div class="collapsible-body"><span><h6></h6></span></div>
+          </li>
+      </ul>
+  <br>
+  <br>
+  <p class="container"> 
+    <h5><span>5. </span></h5>
+  </p>
+  <ul class="collapsible expandable" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+          <div class="collapsible-body"><span><h6></h6></span></div>
+      </li>
+    </ul>
+    <br>
+    <br>
+    <p class="container"> 
+      <h5><span>6. </span></h5>
+    </p>
+    <ul class="collapsible expandable" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+            <div class="collapsible-body"><span><h6></h6></span></div>
+        </li>
+      </ul>
+  </div>
+</div>
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+        $('.modal').modal();
+        $('ul.tabs').tabs();
+        $('.collapsible').collapsible();
+      });
+      </script>
+    </body>
+  </html>

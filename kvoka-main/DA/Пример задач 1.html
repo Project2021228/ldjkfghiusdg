@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+      <meta charset="utf-8">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+      <link rel="stylesheet" type="text/css" href="Пример задач 1.css">
+
+    </head> 
+
+    <body>
+
+      <nav>
+        <div class="nav-wrapper">
+          <div class="container">
+          <a href="главная.html" class="brand-logo"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-light btn modal-trigger blue-grey darken-3" href="#modal1">Дополнительные материалы</a>
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>Дополнительные материалы</h4>
+                <p><h5>Здесь будут представление материалы для решения задач, связанных с системами счисления</h5></p>
+                <p><h5><b>Таблица перевода систем счисления.</b></h5></p>
+                <table>
+                 <tr><th>Десятичная</th><th>Двоичная</th><th>Восмеричная</th><th>Шестнадцатиричная</th></tr>
+                 <tr><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                 <tr><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                 <tr><td>2</td><td>10</td><td>2</td><td>2</td></tr>
+                 <tr><td>3</td><td>11</td><td>3</td><td>3</td></tr>
+                 <tr><td>4</td><td>100</td><td>4</td><td>4</td></tr>
+                 <tr><td>5</td><td>101</td><td>5</td><td>5</td></tr>
+                 <tr><td>6</td><td>110</td><td>6</td><td>6</td></tr>
+                 <tr><td>7</td><td>111</td><td>7</td><td>7</td></tr>
+                 <tr><td>8</td><td>1000</td><td>10</td><td>8</td></tr>
+                 <tr><td>9</td><td>1001</td><td>11</td><td>9</td></tr>
+                 <tr><td>10</td><td>1010</td><td>12</td><td>A</td></tr>
+                 <tr><td>11</td><td>1011</td><td>13</td><td>B</td></tr>
+                 <tr><td>12</td><td>1100</td><td>14</td><td>C</td></tr>
+                 <tr><td>13</td><td>1101</td><td>15</td><td>D</td></tr>
+                 <tr><td>14</td><td>1110</td><td>16</td><td>E</td></tr>
+                 <tr><td>15</td><td>1111</td><td>17</td><td>F</td></tr>
+                </table>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </nav>
+  
+    
+  <div class="container">
+    <div class="box"> 
+    <br><i align="centre"><h3><b>Решение уравнений связанных с системами счисления.</b></h3>
+          <p class="container">
+            <h5><span>1. Решите уравнение 42<sub>5</sub> + x = 1122<sub>3</sub>.Ответ запишите в четверичной системе счисления. Основание системы счисления указывать не нужно.</h5></span>
+          </p>
+          <ul class="collapsible expandable" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+              <div class="collapsible-body"><span><h6>Переведём числа в десятичную систему счисления:
+              <br>42<sub>5</sub> = 4 * 5<sup>1</sup> + 2 * 5<sup>0</sup> = 20 + 1 = 21<sub>10</sub>.
+              <br>1122<sub>3</sub> = 1 * 3<sup>3</sup> + 1 * 3<sup>2</sup> + 2 * 3<sup>1</sup> + 2 * 3<sup>0</sup> = 27 + 9 + 6 + 2 = 44<sub>10</sub>.
+              <br>Теперь решим уравнение в десятичной системе счисления: 
+              <br>21 + x = 44
+              <br>x = 44 - 21 = 23.
+              <br>23 = 113<sub>4</sub>.
+              <br>
+              <br>Ответ: 113.</h6></span></div>
+              </li>
+          </ul>
+          <br>
+          <br>
+          <p class="container">
+            <h5><span>2. Решите уравнение 224<sub>x</sub> + 1 = 101<sub>8</sub>. Ответ запишите в десятичной системе счисления</h5></span>
+          </p>
+          <ul class="collapsible expandable" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+              <div class="collapsible-body"><span><h6>Перенесём всё что нам известно в правую сторону. Получаем:
+              <br>224<sub>x</sub> = 100<sub>8</sub>.
+              <br>Переведём 100<sub>8</sub> и 224<sub>x</sub> в десятичную систему счисления:
+              <br>100<sub>8</sub> = 1 * 8<sup>2</sup> + 0 * 8<sup>1</sup> + 0 * 8<sup>0</sup> = 64 + 0 + 0 = 64<sub>10</sub>.
+              <br>224<sub>x</sub> = 2 * x<sup>2</sup> + 2 * x<sup>1</sup> + 4 * x<sup>0</sup> = (2x<sup>2</sup> + 2x + 4)<sub>10</sub>
+              <br>Получаем, что 2x<sup>2</sup> + 2x + 4 = 64.
+              <br>Сокращаем обе стороны уравнения на 2 и получаем: x<sup>2</sup> + x - 30 = 0.
+              <br>Запишем уравнение в виде разности: x<sup>2</sup> + 6x - 5x - 30 = 0.
+              <br>Вынесем общим вножитель за скобки: x(x + 6) - 5(x + 6) = 0.
+              <br>Получается, что x равен либо (x + 6 = 0) либо (x - 5) = 0.
+              <br>x = -6 или x = 5.
+              <br>Основание системы счиления не может быть отрицательным, поэтому x равен 5.
+              <br>
+              <br>Ответ: x = 5.</h6></span></div>
+              </li>
+          </ul>
+          <br>
+          <br>
+          <p class="container">
+            <h5><span>3. Решите уравнение 44<sub>x+5</sub> - 44<sub>5</sub> = 52<sub>10</sub>. Ответ запишите в десятичной системе счисления.</h5></span>
+          </p>
+          <ul class="collapsible expandable" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+              <div class="collapsible-body"><span><h6>Для удобства переведём всё в десятичную систему счисления:
+              <br>44<sub>5</sub> = 4 * 5<sup>1</sup> + 4 * 5<sup>0</sup> = 20 + 4 = 24<sub>10</sub>.
+              <br>44<sub>x+5</sub> = 4 * (x+5)<sup>1</sup> + 4 * (x+5)<sup>0</sup> = 4 * (x+5) + 4 = 4x + 20 + 4 = (4x + 24)<sub>10</sub>.
+              <br>Получаем: 4x + 24 - 24 = 52.
+              <br>Переносим всё, что нам известно в правую сторону, а x оставляем в левой части уравнения.
+              <br>Получаем: 4x = 52 + 24 - 24; 4x = 52.
+              <br>x = 52/4. x = 13.
+              <br>
+              <br>Ответ: x = 13.
+              </h6></span></div>
+              </li>
+          </ul>
+          <br>
+          <br>
+          <p class="container">
+            <h5><span>4. Решите уравнение 101<sub>x</sub> + 13<sub>10</sub> = 101<sub>x+1</sub>. Ответ запишите в десятичной системе счисления.</h5></span>
+          </p>
+          <ul class="collapsible expandable" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+              <div class="collapsible-body"><span><h6>Для удобства переведём всё в десятичную систему счисления:
+              <br>101<sub>x</sub> = 1 * x<sup>2</sup> + 0 * x<sup>1</sup> + 1 * x<sup>0</sup> = x<sup>2</sup> + x + 1.
+              <br>101<sub>x+1</sub> = 1 * (x+1)<sup>2</sup> + 0 * (x+1)<sup>1</sup> + 1 * (x+1)<sup>0</sup> = (x+1)<sup>2</sup> + 1 = x<sup>2</sup> + 2x + 2.
+              <br>Получаем уравнение: x<sup>2</sup> + x + 1 + 13 = x<sup>2</sup> + 2x + 2.
+              <br>Переносим всё неизвестное вправо, а известное влево: x<sup>2</sup> + x - (x<sup>2</sup> + 2x) = 2 - (1 + 13).
+              <br>После сокращения уравнение приобретает следуйщий вид: -x = -12.
+              <br>Домоножаем обе стороны на (-1) и получаем, что x = 12.
+              <br>
+              <br>Ответ: x = 12. 
+              </h6></span></div>
+              </li>
+          </ul>
+          <br>
+          <br>
+          <p class="container">
+            <h5><span>5. Решите уравнение 104<sub>x</sub> + 20<sub>x</sub> = 84<sub>10</sub>. Ответ запишите в двоичной системе счисления.</h5></span>
+          </p>
+          <ul class="collapsible expandable" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+              <div class="collapsible-body"><span><h6>Переведём все числа в десятичную систему счисления:
+              <br>104<sub>x</sub> = 1 * x<sup>2</sup> + 0 * x<sup>1</sup> + 4 * x<sup>0</sup> = (x<sup>2</sup> + 4)<sub>10</sub>.
+              <br>20<sub>x</sub> = 2 * x<sup>1</sup> + 0 * x<sup>0</sup> = 2x<sub>10</sub>.
+              <br>Получаем уравнение: x<sup>2</sup> + 4 + 2x = 84.
+              <br>Переносим всё в левую часть уравнения: x<sup>2</sup> + 2x + 4 - 84 = 0; x<sup>2</sup> + 2x - 80 = 0.
+              <br>Решаем уравнение с помощью дискриминанта: D = b<sup>2</sup> - 4ac;
+              <br>D = 2<sup>2</sup> - 4 * 1 * (-80) = 4 + 320 = 324. &radic;324 = 18.
+              <br>Так как дискриминант положительный, значит имеется два корня.
+              <br>Получаем, что x<sub>1</sub> = 8, а x<sub>2</sub> = -10. Основание системы счисления - это натуральное число, следовательно
+              <br>решением будет являться x = 8.
+              <br>
+              <br>Ответ: x = 8.</h6></span></div>
+              </li>
+          </ul>
+          <br>
+          <br>
+          
+    </div>
+  </div>
+
+    
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+        $('.modal').modal();
+        $('ul.tabs').tabs();
+        $('.collapsible').collapsible();
+      });
+      </script>
+    </body>
+  </html>

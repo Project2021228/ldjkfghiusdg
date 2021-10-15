@@ -1,0 +1,35 @@
+body {
+	background: url(./mqdefault.jpg) no-repeat center center fixed;
+	background-size: cover;  
+}
+nav {
+	background: green;
+}
+table {
+   border-collapse: collapse;
+   border: 4px black;
+}
+th, td {
+   border: 4px black;
+}
+div.box{
+	height:905px;
+	width:1280px;
+	text-align: center;
+	font-size:14px;
+	background-color: white;
+	margin-right:10px;
+}
+p {
+    color: black; /* Цвет текста */
+}
+ul.collapsible.poput {
+	width: 1000px ;
+}
+ul.tabs {
+	height: 64px ;
+	background: white ;
+}
+span {
+	text-align: left;
+}

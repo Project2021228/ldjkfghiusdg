@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+      <meta charset="utf-8">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+      <link rel="stylesheet" type="text/css" href="Пример задач 1.css">
+
+    </head> 
+
+    <body>
+      <nav>
+        <div class="nav-wrapper">
+          <div class="container">
+          <a href="главная.html" class="brand-logo"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-light btn modal-trigger blue-grey darken-3" href="#modal1">Дополнительные материалы</a>
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>Дополнительные материалы</h4>
+                <p><h5>Здесь будут представление материалы для решения задач, связанных с системами счисления</h5></p>
+                <p><h5><b>Таблица перевода систем счисления.</b></h5></p>
+                <table>
+                 <tr><th>Десятичная</th><th>Двоичная</th><th>Восмеричная</th><th>Шестнадцатиричная</th></tr>
+                 <tr><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                 <tr><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+                 <tr><td>2</td><td>10</td><td>2</td><td>2</td></tr>
+                 <tr><td>3</td><td>11</td><td>3</td><td>3</td></tr>
+                 <tr><td>4</td><td>100</td><td>4</td><td>4</td></tr>
+                 <tr><td>5</td><td>101</td><td>5</td><td>5</td></tr>
+                 <tr><td>6</td><td>110</td><td>6</td><td>6</td></tr>
+                 <tr><td>7</td><td>111</td><td>7</td><td>7</td></tr>
+                 <tr><td>8</td><td>1000</td><td>10</td><td>8</td></tr>
+                 <tr><td>9</td><td>1001</td><td>11</td><td>9</td></tr>
+                 <tr><td>10</td><td>1010</td><td>12</td><td>A</td></tr>
+                 <tr><td>11</td><td>1011</td><td>13</td><td>B</td></tr>
+                 <tr><td>12</td><td>1100</td><td>14</td><td>C</td></tr>
+                 <tr><td>13</td><td>1101</td><td>15</td><td>D</td></tr>
+                 <tr><td>14</td><td>1110</td><td>16</td><td>E</td></tr>
+                 <tr><td>15</td><td>1111</td><td>17</td><td>F</td></tr>
+                </table>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </nav>
+  
+    
+  <div class="container">
+    <div class="box"> 
+    <br><i align="centre">
+        <h3><b>Поиск количества цифр.</b></h3>
+        <div class="block-content">
+          <h5>
+            <span>1. Сколько единиц в двоичной записи числа 4<sup>2016</sup> + 2<sup>2018</sup> – 6?</span>
+          </h5>
+
+          <ul class="collapsible expandable" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header">
+                <i class="material-icons">reorder</i>
+                <h6>Пример решения:</h6>
+              </div>
+              <div class="collapsible-body">
+                <span><h6>Переведём все числа к степеням двойки:
+                  <br> 4<sup>2016</sup> + 2<sup>2018</sup> – 6 = (2<sup>2</sup>)<sup>1016</sup> + 2<sup>1018</sup> - 110 =
+                  <br> 2<sup>4032</sup> + 2<sup>2018</sup> - 110.
+                  <br> 6 = 110<sub>2</sub>.(Смотри дополнительные материалы)
+                  <br>Вспомним, что число 2<sup>N</sup>-1 в двоичной системе записывается как N единиц,
+                  <br>а число 2<sup>N</sup>–2<sup>K</sup> при K < N записывается как N–K единиц и K нулей.
+                  <br>Следовательно, число 2<sup>2018</sup> – 110 запишется как 1016 единицы и 2 нуля.
+                  <br>Прибавление 2<sup>3069</sup> даст ещё одну единицу, всего получается 1016 + 1 = 1017 единиц.
+                  <br>
+                  <br>Ответ: 2017 едениц.</h6>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+          <p>
+            <h5><span>2. Укажите, сколько всего раз встречается цифра 3 в записи чисел 19, 20, 21, …, 33 в системе счисления с основанием 6.</h5></span>
+          </p>
+          <ul class="collapsible expandable" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+              <div class="collapsible-body"><span><h6>Запишем первое и последнее число в заданном диапазоне в системе счисления с основанием 6:
+              <br>19<sub>10</sub> = 31<sub>6</sub>,
+              <br>33<sub>10</sub> = 53<sub>6</sub>.
+              <br>Запишем по порядку числа, в записи которых встречается цифра 3, от 31<sub>6</sub> до 53<sub>6</sub>: 31<sub>6</sub>, 32<sub>6</sub>, 33<sub>6</sub>, 34<sub>6</sub>, 35<sub>6</sub>, 43<sub>6</sub>, 53<sub>6</sub>. Всего цифра «3» встречается 8 раз.
+              <br>
+              <br>Ответ: 8 раз.</h6></span></div>
+              </li>
+          </ul>
+          <br>
+          <br>
+          <p>
+            <h5><span>3. Сколько единиц в двоичной записи числа (2<sup>4400</sup> – 1)·(4<sup>2200</sup> + 2)?</h5></span>
+          </p>
+          <ul class="collapsible expandable" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+              <div class="collapsible-body"><span><h6>Переведём все числа к степеням двойки:
+              <br> (2<sup>4400</sup> - 1)·(4<sup>2200</sup> + 2) = (2<sup>4400</sup> - 1)·(4<sup>2200</sup> + 2) = (2<sup>4400</sup> - 1)·((2<sup>2</sup>)<sup>2200</sup> + 2) = (2<sup>4400</sup> - 1)·(2<sup>4400</sup> + 2).
+              <br> 1 = 1<sub>2</sub>; 2 = 10<sub>2</sub>.(Смотри дополнительные материалы)
+              <br>Выполним действие умножение: (2<sup>4400</sup> - 1)·(2<sup>4400</sup> + 2) = (2<sup>4400</sup> · 2<sup>4400</sup>) + (2<sup>4400</sup> · 2) - (2<sup>4400</sup> · 1) - (1 · 2) = (2<sup>4400</sup>)<sup>2</sup> + 2<sup>4401</sup> - 2<sup>4400</sup> - 2 = 2<sup>8800</sup> + 2<sup>4401</sup> - 2<sup>4400</sup> - 10.
+              <br>Вспомним, что число 2<sup>N</sup>-1 в двоичной системе записывается как N единиц,
+              <br>а число 2<sup>N</sup>–2<sup>K</sup> при K < N записывается как N–K единиц и K нулей.
+              <br>Следовательно, число 2<sup>4401</sup> – 2<sup>4400</sup> запишется как одна еденица и 4400 нуля.
+              <br>Аналогично число 2<sup>4400</sup> - 10 запишется как 4399 едениц и один ноль.
+              <br>Прибавление 2<sup>8800</sup> и 2<sup>4399</sup> запишется как 4400 единицы и 4400 нулей.
+              <br>
+              <br>Ответ: 4400 едениц.</h6></span></div>
+              </li>
+          </ul>
+          <br>
+          <br>
+          <p>
+            <h5><span>4. Сколько цифр в восьмеричной записи числа 2<sup>1024</sup>+2<sup>1026</sup>?</h5></span>
+          </p>
+          <ul class="collapsible popout" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+              <div class="collapsible-body"><span><h6>В двоичной системе это число занимает 3+1024=1027 разрядов. 
+                <br>Для перевода целого числа из двоичной системы счисления в восьмеричную надо каждые три двоичных разряда, начиная с самого правого, заменить соответствующей восьмеричной цифрой. 
+                <br>1027 делим на три и округляем результат в большую сторону до целых. 
+                <br>Получаем 343. 
+                <br>Следовательно, в восьмеричном числе будет 343 разряда (цифры).
+                <br>
+                <br>Ответ: 343 цифры.</h6></span></div>
+              </li>
+          </ul>
+          <br>
+          <br>
+          <p>
+            <h5><span>5. Какая первая цифра в шестнадцатеричной записи числа 2<sup>1024</sup>+2<sup>1025</sup>?</h5></span>
+          </p>
+          <ul class="collapsible expandable" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+              <div class="collapsible-body"><span><h6>Сложим оба числа: 2<sup>1024</sup>+2<sup>1025</sup>.
+                <br>Получаем две единицы и 1024 нуля.
+                <br>Дописываем в начало два незначащих нуля для того, чтобы перевести 11 в шестнадцатиричную систему счисления. 
+                <br>Получаем 0011.0000...000<sub>2</sub>(1024 нуля) = 3.000...000<sub>16</sub>(1024 / 4 = 256 нулей).
+                <br>0011<sub>2</sub> = 3<sub>16</sub>(Смотри дополнительные материалы). 
+                <br>Следовательно, в шестнадцатиричной системе счисления первой цифрой числа будет 3.
+                <br>
+                <br>Ответ: 3<sub>16</sub>.</h6></span></div>
+              </li>
+          </ul>
+          <br>
+          <br>
+          <p>
+            <h5><span>3. Сколько единиц в двоичной записи числа (2<sup>4400</sup> – 1)·(4<sup>2200</sup> + 2)?</h5></span>
+          </p>
+          <ul class="collapsible expandable" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">reorder</i><h6>Пример решения:</h6></div>
+              <div class="collapsible-body"><span><h6>Переведём все числа к степеням двойки:
+              <br> (2<sup>4400</sup> - 1)·(4<sup>2200</sup> + 2) = (2<sup>4400</sup> - 1)·(4<sup>2200</sup> + 2) = (2<sup>4400</sup> - 1)·((2<sup>2</sup>)<sup>2200</sup> + 2) = (2<sup>4400</sup> - 1)·(2<sup>4400</sup> + 2).
+              <br> 1 = 1<sub>2</sub>; 2 = 10<sub>2</sub>.(Смотри дополнительные материалы)
+              <br>Выполним действие умножение: (2<sup>4400</sup> - 1)·(2<sup>4400</sup> + 2) = (2<sup>4400</sup> · 2<sup>4400</sup>) + (2<sup>4400</sup> · 2) - (2<sup>4400</sup> · 1) - (1 · 2) = (2<sup>4400</sup>)<sup>2</sup> + 2<sup>4401</sup> - 2<sup>4400</sup> - 2 = 2<sup>8800</sup> + 2<sup>4401</sup> - 2<sup>4400</sup> - 10.
+              <br>Вспомним, что число 2<sup>N</sup>-1 в двоичной системе записывается как N единиц,
+              <br>а число 2<sup>N</sup>–2<sup>K</sup> при K < N записывается как N–K единиц и K нулей.
+              <br>Следовательно, число 2<sup>4401</sup> – 2<sup>4400</sup> запишется как одна еденица и 4400 нуля.
+              <br>Аналогично число 2<sup>4400</sup> - 10 запишется как 4399 едениц и один ноль.
+              <br>Прибавление 2<sup>8800</sup> и 2<sup>4399</sup> запишется как 4400 единицы и 4400 нулей.
+              <br>
+              <br>Ответ: 4400 едениц.</h6></span></div>
+              </li>
+          </ul>
+    </div>
+  </div>
+
+    
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+        $('.modal').modal();
+        $('ul.tabs').tabs();
+        $('.collapsible').collapsible();
+      });
+      </script>
+    </body>
+  </html>
